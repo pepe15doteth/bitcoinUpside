@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="icon" href="./metadata/favicon.png" type="image/png">
+        <link rel="icon" href="./metadata/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="./metadata/nes.css/css/nes.css">
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>₿ Satoshi's Vision</title>
+        <link rel="stylesheet" href="./styles.css">
+
+    </head>
+
+    <body>
+        <div id="crtScanlines" class="scanline"></div>
+
+        <div id="crtMonitor" class="crt">
+
+            <div class="lights"></div>
+
+            <div id="mainContainer">
+                <div id="bodyContainer">
+
+                    <div id="flashingHeader">SATOSHI's<br>VISION</h1>
+                    </div>
+
+                    <div id="tokenInfo" class="nes-container is-dark">
+                        <div id="bitcoinCa">0xe4eFDd2eb216A4620cfA55c5cC67Bd09DC64Ff24</div>
+                        <div id="buyBtnContainer">
+                            <button id="caCopyIcon" type="button" class="nes-btn is-error">Copy CA</button>
+                            <button id="buyBtn" type="button" class="nes-btn is-success">Buy</button>
+                        </div>
+                    </div>
+
+                    <div id="lore" class="nes-container is-dark">
+                        <div id="loreText1">
+                            Created by 0x7a9d3ec77ef2f32016bb6A4C60479cc89C6a04D3 to present, what some may consider Satoshi's True Vision. We don't know who the dev is, dev only communicates to us via the Blockchain.                         
+                        </div>
+                        <div id="loreText">
+                            Satoshi's Message Board:
+                            <br>
+                            <br>
+                            信者は報われるでしょう
+                            <br>
+                            "Believers will be rewarded."
+                            <br>
+                            <br>
+                            太陽と月
+                            <br>
+                            "The sun and the moon."
+                            <br>
+                            <br>
+                            ビットコインの台頭
+                            <br>
+                            "Rise of Bitcoin."
+                            <br>
+                            <br>
+                            月に向かう途中でハードルが来る
+                            <br>
+                            "Hurdles come on the way to the moon."
+                        </div>
+                    </div>
+
+
+                    <div id="socialContainer">
+                        <div id="buttons">
+                            <div class="socialButtons">
+                                <button id="twitterBtn" class="nes-btn">Twitter</button>
+                                <button id="satoshiBtn" class="nes-btn is-error">Satoshi's Wallet</button>                            
+                            </div>
+                            <div class="socialButtons">
+                                <button id="telegramBtn1" class="nes-btn">Community Telegram</button>
+                                <button id="telegramBtn2" class="nes-btn">Official Telegram</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="trademark">
+                        <div id="trademarkText">Made with love by finisus.eth</div>
+                        <div id="trademarkTwitter" class="nes-btn">Twitter</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <script src="./app.js"></script>
+        <script>
+            createLight();
+        </script>
+
+    </body>
+</html>
