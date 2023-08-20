@@ -114,6 +114,16 @@ dexscreener.addEventListener('click', function () {
 trademarkTwitter.addEventListener('click', function () {
     window.open('https://twitter.com/finisvisus', '_blank');
 });
+const emailBtn = document.getElementById('emailBtn');
+emailBtn.addEventListener('click', function () {
+    const recipientEmail = 'team@bitcoinupside.cash';
+    const subject = encodeURIComponent('Contact Us');
+    const body = encodeURIComponent('Hello ₿ Bitcoin Upside Community Team,\n\nI have a question:');
+
+    const mailtoLink = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoLink;
+});
 
 // Dollar Sign Background
 const lightsContainer = document.querySelector(".lights");
