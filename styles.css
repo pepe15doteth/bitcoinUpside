@@ -307,7 +307,8 @@ body::-webkit-scrollbar-track {
   flex-direction: column;
 }
 
-#bitcoinCa {
+#bitcoinCa,
+#ticker {
   font-size: 18px;
   max-width: 100%;
   word-wrap: break-word;
@@ -369,10 +370,17 @@ body::-webkit-scrollbar-track {
   flex-direction: row;
   justify-content: center;
 }
+.chartButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 #twitterBtn,
 #satoshiBtn,
 #telegramBtn1,
-#telegramBtn2 {
+#telegramBtn2,
+#dextools,
+#dexscreener {
   font-size: 14px;
   color: #0f0a1e;
   letter-spacing: 5px;
@@ -424,7 +432,8 @@ body::-webkit-scrollbar-track {
     margin-bottom: 10px;
   }
 
-  #bitcoinCa {
+  #bitcoinCa,
+  #ticker {
     font-size: 10px;
     max-width: 100%;
   }
@@ -459,7 +468,9 @@ body::-webkit-scrollbar-track {
   #twitterBtn,
   #satoshiBtn,
   #telegramBtn1,
-  #telegramBtn2 {
+  #telegramBtn2,
+  #dextools,
+  #dexscreener {
     font-size: 12px;
     color: #0f0a1e;
     letter-spacing: 5px;
