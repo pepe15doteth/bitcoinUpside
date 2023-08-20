@@ -44,6 +44,8 @@ const twitterBtn = document.getElementById('twitterBtn');
 const satoshiBtn = document.getElementById('satoshiBtn');
 const telegramBtn1 = document.getElementById('telegramBtn1');
 const telegramBtn2 = document.getElementById('telegramBtn2');
+const dextools = document.getElementById('dextools');
+const dexscreener = document.getElementById('dexscreener');
 const trademarkTwitter = document.getElementById('trademarkTwitter');
 twitterBtn.addEventListener('click', function () {
     window.open('https://twitter.com/basicbitcoineth', '_blank');
@@ -56,6 +58,12 @@ telegramBtn1.addEventListener('click', function () {
 });
 telegramBtn2.addEventListener('click', function () {
     window.open('https://t.me/BitcoinUpside', '_blank');
+});
+dextools.addEventListener('click', function () {
+    window.open('https://www.dextools.io/app/en/ether/pair-explorer/0x1d9992600d22d336e9ab9f0807989feb945aedce', '_blank');
+});
+dexscreener.addEventListener('click', function () {
+    window.open('https://dexscreener.com/ethereum/0x1d9992600d22d336e9ab9f0807989feb945aedce', '_blank');
 });
 trademarkTwitter.addEventListener('click', function () {
     window.open('https://twitter.com/finisvisus', '_blank');
