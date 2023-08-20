@@ -90,7 +90,7 @@ const dextools = document.getElementById('dextools');
 const dexscreener = document.getElementById('dexscreener');
 const trademarkTwitter = document.getElementById('trademarkTwitter');
 twitterBtn.addEventListener('click', function () {
-    window.open('https://twitter.com/basicbitcoineth', '_blank');
+    window.open('https://twitter.com/BitcoinSVupside', '_blank');
 });
 satoshiBtn.addEventListener('click', function () {
     window.open('https://etherscan.io/address/0x7a9d3ec77ef2f32016bb6a4c60479cc89c6a04d3', '_blank');
