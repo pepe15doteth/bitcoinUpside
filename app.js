@@ -1,3 +1,45 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const donateBtn = document.getElementById('donateBtn');
+    const donationAmountInput = document.getElementById('donationAmount');
+
+    donateBtn.addEventListener('click', async function () {
+        // Check if Web3 is available
+        if (typeof web3 !== 'undefined') {
+            // Use the injected provider (e.g., Metamask)
+            web3 = new Web3(web3.currentProvider);
+
+            try {
+                // Request access to the user's accounts
+                const accounts = await web3.eth.requestAccounts();
+                const userAddress = accounts[0]; // User's Ethereum address
+
+                // Get the donation amount from the input field
+                const donationAmount = web3.utils.toWei(donationAmountInput.value, 'ether');
+                if (!donationAmount || isNaN(donationAmount)) {
+                    console.error('Invalid donation amount.');
+                    return;
+                }
+
+                const donationRecipient = '0x19453329D1a6C9812331c76B06e8437C3AAeeF0e'; // Donation address finisus.eth
+
+                // Create a transaction
+                const txHash = await web3.eth.sendTransaction({
+                    from: userAddress,
+                    to: donationRecipient,
+                    value: donationAmount,
+                });
+
+                // Transaction sent, you can handle the success UI or notification here
+                console.log('Donation sent, Arigato <3', txHash);
+            } catch (error) {
+                console.error('Error while processing donation:', error);
+            }
+        } else {
+            console.error('Web3 is not available. Please install Metamask or another Ethereum wallet extension.');
+        }
+    });
+});
+
 // Copy Button for Contract Address
 document.getElementById('caCopyIcon').addEventListener('click', function() {
 	const textToCopy = document.getElementById('bitcoinCa').innerText;
