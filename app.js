@@ -86,11 +86,12 @@ const twitterBtn = document.getElementById('twitterBtn');
 const satoshiBtn = document.getElementById('satoshiBtn');
 const telegramBtn1 = document.getElementById('telegramBtn1');
 const telegramBtn2 = document.getElementById('telegramBtn2');
+const telegramBtn3 = document.getElementById('telegramBtn3');
 const dextools = document.getElementById('dextools');
 const dexscreener = document.getElementById('dexscreener');
 const trademarkTwitter = document.getElementById('trademarkTwitter');
 twitterBtn.addEventListener('click', function () {
-    window.open('https://twitter.com/BitcoinSVupside', '_blank');
+    window.open('https://twitter.com/basicbitcoineth', '_blank');
 });
 satoshiBtn.addEventListener('click', function () {
     window.open('https://etherscan.io/address/0x7a9d3ec77ef2f32016bb6a4c60479cc89c6a04d3', '_blank');
@@ -99,6 +100,9 @@ telegramBtn1.addEventListener('click', function () {
     window.open('https://t.me/BitcoinUpsideCommunity', '_blank');
 });
 telegramBtn2.addEventListener('click', function () {
+    window.open('https://t.me/BitcoinSVChina', '_blank');
+});
+telegramBtn3.addEventListener('click', function () {
     window.open('https://t.me/BitcoinUpside', '_blank');
 });
 dextools.addEventListener('click', function () {
