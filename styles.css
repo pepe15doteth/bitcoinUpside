@@ -380,7 +380,8 @@ body::-webkit-scrollbar-track {
 #telegramBtn1,
 #telegramBtn2,
 #dextools,
-#dexscreener {
+#dexscreener,
+#donateBtn {
   font-size: 14px;
   color: #0f0a1e;
   letter-spacing: 5px;
@@ -388,11 +389,20 @@ body::-webkit-scrollbar-track {
   margin: 10px;
 }
 
+#donationAmount {
+  width: 160px;
+  font-size: 12px;
+  letter-spacing: 5px;
+  padding: 5px;
+  border-width: 2px;
+}
 #trademark {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 #trademarkText {
   font-size: 12px;
@@ -407,6 +417,16 @@ body::-webkit-scrollbar-track {
   letter-spacing: 5px;
   padding: 2px;
   flex: 0 0 auto;
+}
+
+/* Hide the spinners for number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
 }
 
 /* Styles for screens with a maximum width of 400px - mobile */
@@ -470,7 +490,8 @@ body::-webkit-scrollbar-track {
   #telegramBtn1,
   #telegramBtn2,
   #dextools,
-  #dexscreener {
+  #dexscreener,
+  #donateBtn {
     font-size: 12px;
     color: #0f0a1e;
     letter-spacing: 5px;
