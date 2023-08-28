@@ -508,9 +508,6 @@ telegramBtn1.addEventListener('click', function () {
 telegramBtn2.addEventListener('click', function () {
     window.open('https://t.me/BitcoinUpsideCommunityCN', '_blank');
 });
-telegramBtn3.addEventListener('click', function () {
-    window.open('https://t.me/BitcoinUpside', '_blank');
-});
 dextools.addEventListener('click', function () {
     window.open('https://www.dextools.io/app/en/ether/pair-explorer/0x1d9992600d22d336e9ab9f0807989feb945aedce', '_blank');
 });
